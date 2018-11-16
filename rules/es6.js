@@ -24,171 +24,52 @@ module.exports = {
         'no-confusing-arrow': [2, {
             allowParens: true,
         }],
-
-        // disallow modifying variables that are declared using const
-        'no-const-assign': 'error',
-
-        /*
-         * disallow duplicate class members
-         * http://eslint.org/docs/rules/no-dupe-class-members
-         */
-        'no-dupe-class-members': 'error',
-
-        /*
-         * disallow importing from the same path more than once
-         * http://eslint.org/docs/rules/no-duplicate-imports
-         * replaced by https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-duplicates.md
-         */
-        'no-duplicate-imports': 'off',
-
-        /*
-         * disallow symbol constructor
-         * http://eslint.org/docs/rules/no-new-symbol
-         */
-        'no-new-symbol': 'error',
-
-        /*
-         * disallow specific imports
-         * http://eslint.org/docs/rules/no-restricted-imports
-         */
-        'no-restricted-imports': 'off',
-
-        /*
-         * disallow to use this/super before super() calling in constructors.
-         * http://eslint.org/docs/rules/no-this-before-super
-         */
-        'no-this-before-super': 'error',
-
-        /*
-         * disallow useless computed property keys
-         * http://eslint.org/docs/rules/no-useless-computed-key
-         */
-        'no-useless-computed-key': 'error',
-
-        /*
-         * disallow unnecessary constructor
-         * http://eslint.org/docs/rules/no-useless-constructor
-         */
-        'no-useless-constructor': 'error',
-
-        /*
-         * disallow renaming import, export, and destructured assignments to the same name
-         * http://eslint.org/docs/rules/no-useless-rename
-         */
-        'no-useless-rename': ['error', {
+        'no-const-assign': 2,
+        'no-dupe-class-members': 2,
+        'no-duplicate-imports': 0,
+        'no-new-symbol': 2,
+        'no-restricted-imports': 0,
+        'no-this-before-super': 2,
+        'no-useless-computed-key': 2,
+        'no-useless-constructor': 2,
+        'no-useless-rename': [2, {
             ignoreDestructuring: false,
             ignoreImport: false,
             ignoreExport: false,
         }],
-
-        // require let or const instead of var
-        'no-var': 'error',
-
-        /*
-         * require method and property shorthand syntax for object literals
-         * http://eslint.org/docs/rules/object-shorthand
-         */
-        'object-shorthand': ['off', 'always', {
+        'no-var': 2,
+        'object-shorthand': [0, 'always', {
             ignoreConstructors: false,
             avoidQuotes: true,
         }],
-
-        /*
-         * suggest using arrow functions as callbacks
-         * this is okay but should not enforce
-         */
-        'prefer-arrow-callback': ['off', {
+        'prefer-arrow-callback': [0, {
             allowNamedFunctions: false,
             allowUnboundThis: true,
         }],
-
-        // suggest using of const declaration for variables that are never modified after declared
-        'prefer-const': ['error', {
+        'prefer-const': [2, {
             destructuring: 'any',
             ignoreReadBeforeAssign: true,
         }],
-
-        /*
-         * Prefer destructuring from arrays and objects
-         * http://eslint.org/docs/rules/prefer-destructuring
-         */
-        'prefer-destructuring': ['warn', {
+        'prefer-destructuring': [1, {
             array: true,
             object: true,
         }, {
             enforceForRenamedProperties: false,
         }],
-
-        /*
-         * disallow parseInt() in favor of binary, octal, and hexadecimal literals
-         * http://eslint.org/docs/rules/prefer-numeric-literals
-         */
-        'prefer-numeric-literals': 'error',
-
-        /*
-         * suggest using Reflect methods where applicable
-         * http://eslint.org/docs/rules/prefer-reflect
-         */
-        'prefer-reflect': 'off',
-
-        /*
-         * use rest parameters instead of arguments
-         * http://eslint.org/docs/rules/prefer-rest-params
-         */
-        'prefer-rest-params': 'error',
-
-        /*
-         * suggest using the spread operator instead of .apply()
-         * http://eslint.org/docs/rules/prefer-spread
-         */
-        'prefer-spread': 'error',
-
-        /*
-         * suggest using template literals instead of string concatenation
-         * e.g. '?' + qs.stringify({...}), such case dont need template literals
-         * http://eslint.org/docs/rules/prefer-template
-         */
-        'prefer-template': 'off',
-
-        /*
-         * disallow generator functions that do not have yield
-         * koa in some cases dont need to yield
-         * http://eslint.org/docs/rules/require-yield
-         */
-        'require-yield': 'off',
-
-        /*
-         * enforce spacing between object rest-spread
-         * http://eslint.org/docs/rules/rest-spread-spacing
-         */
-        'rest-spread-spacing': ['error', 'never'],
-
-        /*
-         * import sorting
-         * http://eslint.org/docs/rules/sort-imports
-         */
-        'sort-imports': ['off', {
+        'prefer-numeric-literals': 2,
+        'prefer-reflect': 0,
+        'prefer-rest-params': 2,
+        'prefer-spread': 2,
+        'prefer-template': 0,
+        'require-yield': 0,
+        'rest-spread-spacing': [2, 'never'],
+        'sort-imports': [0, {
             ignoreCase: false,
             ignoreMemberSort: false,
             memberSyntaxSortOrder: ['none', 'all', 'multiple', 'single'],
         }],
-
-        /*
-         * require a Symbol description
-         * http://eslint.org/docs/rules/symbol-description
-         */
-        'symbol-description': 'error',
-
-        /*
-         * enforce usage of spacing in template strings
-         * http://eslint.org/docs/rules/template-curly-spacing
-         */
-        'template-curly-spacing': 'error',
-
-        /*
-         * enforce spacing around the * in yield* expressions
-         * http://eslint.org/docs/rules/yield-star-spacing
-         */
-        'yield-star-spacing': ['error', 'after'],
+        'symbol-description': 2,
+        'template-curly-spacing': 2,
+        'yield-star-spacing': [2, 'after'],
     }
 };
