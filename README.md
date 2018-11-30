@@ -8,7 +8,7 @@ It is a tool for standardizing javascript writing.
 
 ## Usage
 
-Current eslint configurations contains rules about best-practices, es6 and some node.
+Current eslint configurations contains rules about best-practices, ES6 and Node.
 First install to your project root directory.
 
 ```
