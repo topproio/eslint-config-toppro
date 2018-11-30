@@ -1,5 +1,9 @@
 # eslint-config-toppro
 
+[![npm](https://img.shields.io/badge/license-MIT-yellowgreen.svg)]()
+[![npm](https://img.shields.io/badge/node-%3E%3D8-blue.svg)]()
+[![npm](https://img.shields.io/badge/npm-v6.4.1-yellow.svg)]()
+
 It is a tool for standardizing javascript writing.
 
 ## Usage
@@ -51,4 +55,17 @@ module.exports = {
 }
 ```
 
+Or you want to use it for Gulp task.
+
+```
+const eslint = require('gulp-eslint');
+
+gulp.task('lint', () => {
+    gulp.src('*.js')
+        .pipe(eslint({
+            configFile: './.eslintrc.js'
+        }))
+        .pipe(eslint.format());
+});
+```
 
