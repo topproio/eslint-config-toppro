@@ -5,6 +5,7 @@ module.exports = {
         node: true,
         browser: true,
     },
+
     rules: {
         'no-debugger': 0,
         'no-console': 0,
@@ -40,6 +41,6 @@ module.exports = {
         'spaced-comment': [2, 'always'],
         'indent': [2, 4],
         'semi': [2, 'always'],
-        'semi-spacing': 2
+        'semi-spacing': 2,
     }
 };

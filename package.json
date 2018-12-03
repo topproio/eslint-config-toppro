@@ -10,7 +10,8 @@
     "eslint": "^5.9.0"
   },
   "optionalDependencies": {
-    "babel-eslint": "^10.0.1"
+    "babel-eslint": "^10.0.1",
+    "eslint-restricted-globals": "^0.2.0"
   },
   "config": {
     "commitizen": {
