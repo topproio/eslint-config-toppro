@@ -25,6 +25,7 @@ module.exports = {
 ```
 
 If you want to apply it to webpack compilation process, it is an example below.(Learn from vue-cli)
+
 First we have installed the dependencies.
 
 ```
@@ -67,3 +68,10 @@ gulp.task('lint', () => {
         .pipe(eslint.format());
 });
 ```
+
+## Todo
+
+- [X] Base rules: ES6, Node, Style and Variables
+- [ ] Wechat miniprogram adapter: toppro/weapp
+- [ ] Vue adapter
+- [ ] React adapter

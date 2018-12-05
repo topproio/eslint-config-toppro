@@ -22,7 +22,7 @@ module.exports = {
         'no-floating-decimal': 2,
         'no-with': 2,
         'block-scoped-var': 2,
-        'eqeqeq': [2, 'always', { null: 'ignore' }],
+        'eqeqeq': [2, 'always', {null: 'ignore'}],
         'no-eval': 2,
         'multiline-comment-style': [2, 'starred-block'],
         'array-bracket-spacing': [2, 'never'],
