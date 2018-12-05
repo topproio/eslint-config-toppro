@@ -5,6 +5,11 @@ const allows = ['name', 'history', 'status', 'event'];
 const restrictedGlobals = eslintRestrictedGlobals.filter(g => !allows.includes(g));
 
 module.exports = {
+    env: {
+        node: true,
+        browser: true,
+    },
+
     rules: {
         'init-declarations': 0,
         'no-catch-shadow': 0,
