@@ -6,7 +6,7 @@
 
 [The pluggable linting utility for JavaScript.](https://eslint.org/)
 
-## Installation
+## Installation
 
 ```
 npm i -D eslint-config-toppro
