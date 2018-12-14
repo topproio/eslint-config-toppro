@@ -4,18 +4,15 @@
 [![npm](https://img.shields.io/badge/node-%3E%3D8-blue.svg)]()
 [![npm](https://img.shields.io/badge/npm-v6.4.1-yellow.svg)]()
 
-It is a tool for standardizing javascript writing.
+[The pluggable linting utility for JavaScript.](https://eslint.org/)
 
-## Usage
-
-Current eslint configurations contains rules about best-practices, ES6 and Node.
-First install to your project root directory.
+## Installation
 
 ```
 npm i -D eslint-config-toppro
 ```
 
-Then add it in the .eslintrc file.
+To use it:
 
 ```
 module.exports = {
@@ -24,15 +21,15 @@ module.exports = {
 }
 ```
 
-If you want to apply it to webpack compilation process, it is an example below.(Learn from vue-cli)
+## Webpack usage
 
-First we have installed the dependencies.
+Install webpack loader:
 
 ```
 npm i -D babel-eslint eslint eslint-config-toppro eslint-friendly-formatter eslint-loader
 ```
 
-And modify the webpack configuration.
+To use it:
 
 ```
 const createLintingRule = () => ({
@@ -55,7 +52,9 @@ module.exports = {
 }
 ```
 
-Or you want to use it for Gulp task.
+## Gulp usage
+
+To use it:
 
 ```
 const eslint = require('gulp-eslint');
@@ -69,9 +68,40 @@ gulp.task('lint', () => {
 });
 ```
 
+## Wechat Miniprogram Usage
+
+Wechat miniprogram has some global variables, which have been configured.
+
+```
+globals: {
+    wx: true,
+    App: true,
+    Page: true,
+    getApp: true,
+    Component: true
+}
+```
+
+To use it:
+
+```
+module.exports = {
+    ...
+    extends: ['toppro/weapp']
+}
+```
+
+## Configuring ESLint
+
+[User-guide/configuring](https://eslint.org/docs/user-guide/configuring)
+
+[Disabling Rules with Inline Comments](https://eslint.org/docs/user-guide/configuring#disabling-rules-with-inline-comments)
+
+[Specifying Globals](https://eslint.org/docs/user-guide/configuring#specifying-globals)
+
 ## Todo
 
 - [X] Base rules: ES6, Node, Style and Variables
-- [ ] Wechat miniprogram adapter: toppro/weapp
+- [X] Wechat miniprogram adapter: toppro/weapp
 - [ ] Vue adapter
 - [ ] React adapter
