@@ -6,7 +6,7 @@
 
 [The pluggable linting utility for JavaScript.](https://eslint.org/)
 
-## Installation
+## Installation
 
 ```
 npm i -D eslint-config-toppro
@@ -102,6 +102,6 @@ module.exports = {
 ## Todo
 
 - [X] Base rules: ES6, Node, Style and Variables
-- [X] Wechat miniprogram adapter: toppro/weapp
+- [X] Wechat miniprogram adapter: toppro/weapp
 - [ ] Vue adapter
 - [ ] React adapter
