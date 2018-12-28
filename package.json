@@ -13,6 +13,13 @@
     "babel-eslint": "^10.0.1",
     "eslint-restricted-globals": "^0.2.0"
   },
+  "peerDependencies": {
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-loader": "^2.1.1",
+    "eslint-plugin-html": "^5.0.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "vue-eslint-parser": "^4.0.3"
+  },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"

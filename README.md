@@ -68,7 +68,7 @@ gulp.task('lint', () => {
 });
 ```
 
-## Wechat Miniprogram Usage
+## Wechat Miniprogram usage
 
 Wechat miniprogram has some global variables, which have been configured.
 
@@ -91,6 +91,23 @@ module.exports = {
 }
 ```
 
+## Vue usage
+
+Npm with version greater than 3 will not be installed peerDependencies automatically. So if you didn't choose ESLint when building a vue project that you need to install the following dependencies.
+
+```
+npm i -D eslint eslint-loader eslint-plugin-html eslint-plugin-vue eslint-loader
+```
+
+To use it:
+
+```
+module.exports = {
+    ...
+    extends: ['toppro/vue']
+}
+```
+
 ## Configuring ESLint
 
 [User-guide/configuring](https://eslint.org/docs/user-guide/configuring)
@@ -102,6 +119,6 @@ module.exports = {
 ## Todo
 
 - [X] Base rules: ES6, Node, Style and Variables
-- [X] Wechat miniprogram adapter: toppro/weapp
-- [ ] Vue adapter
-- [ ] React adapter
+- [X] Wechat miniprogram: toppro/weapp
+- [x] Vue
+- [ ] React
