@@ -3,6 +3,7 @@
 [![npm](https://img.shields.io/badge/license-MIT-yellowgreen.svg)]()
 [![npm](https://img.shields.io/badge/node-%3E%3D8-blue.svg)]()
 [![npm](https://img.shields.io/badge/npm-v6.4.1-yellow.svg)]()
+[![npm](https://img.shields.io/badge/ESLint-5.9.0-red.svg)]()
 
 [The pluggable linting utility for JavaScript.](https://eslint.org/)
 
