@@ -13,11 +13,10 @@
 npm i -D eslint-config-toppro
 ```
 
-To use it:
+Written in `.eslintrc.js`:
 
 ```
 module.exports = {
-    ...
     extends: ['toppro']
 }
 ```
@@ -27,7 +26,7 @@ module.exports = {
 Install webpack loader:
 
 ```
-npm i -D babel-eslint eslint eslint-config-toppro eslint-friendly-formatter eslint-loader
+npm i -D eslint babel-eslint eslint-config-toppro eslint-friendly-formatter eslint-loader
 ```
 
 To use it:
@@ -83,11 +82,10 @@ globals: {
 }
 ```
 
-To use it:
+Written in `.eslintrc.js`:
 
 ```
 module.exports = {
-    ...
     extends: ['toppro/weapp']
 }
 ```
@@ -97,15 +95,30 @@ module.exports = {
 Npm with version greater than 3 will not be installed peerDependencies automatically. So if you didn't choose ESLint when building a vue project that you need to install the following dependencies.
 
 ```
-npm i -D eslint eslint-loader eslint-plugin-html eslint-plugin-vue eslint-loader
+npm i -D eslint babel-eslint eslint-loader eslint-plugin-html eslint-plugin-vue eslint-loader
 ```
 
-To use it:
+Written in `.eslintrc.js`:
 
 ```
 module.exports = {
-    ...
     extends: ['toppro/vue']
+}
+```
+
+## React usage
+
+We use eslint config of create-react-app. Please install:
+
+```
+npm i -D eslint babel-eslint eslint-plugin-flowtype eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react eslint-config-toppro eslint-config-react-app eslint-loader confusing-browser-globals
+```
+
+Written in `.eslintrc.js`:
+
+```
+module.exports = {
+    extends: ['toppro/react']
 }
 ```
 
@@ -122,4 +135,4 @@ module.exports = {
 - [X] Base rules: ES6, Node, Style and Variables
 - [X] Wechat miniprogram: toppro/weapp
 - [x] Vue
-- [ ] React
+- [x] React

@@ -9,18 +9,24 @@
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -p 0"
   },
   "devDependencies": {
-    "cz-conventional-changelog": "^2.1.0",
-    "eslint": "^5.9.0"
+    "cz-conventional-changelog": "^2.1.0"
   },
   "optionalDependencies": {
-    "babel-eslint": "^10.0.1",
+    "eslint": "^5.9.0",
     "eslint-restricted-globals": "^0.2.0"
   },
   "peerDependencies": {
+    "babel-eslint": "^10.0.1",
+    "confusing-browser-globals": "^1.0.5",
     "eslint-friendly-formatter": "^4.0.1",
+    "eslint-config-react-app": "^3.0.6",
     "eslint-loader": "^2.1.1",
     "eslint-plugin-html": "^5.0.0",
     "eslint-plugin-vue": "^5.0.0",
+    "eslint-plugin-flowtype": "2.x",
+    "eslint-plugin-import": "2.x",
+    "eslint-plugin-jsx-a11y": "6.x",
+    "eslint-plugin-react": "7.x",
     "vue-eslint-parser": "^4.0.3"
   },
   "config": {
