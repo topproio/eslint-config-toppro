@@ -1,3 +1,7 @@
+## <small>1.0.5 (2018-12-29)</small>
+
+* feat: extend toppro/react ([30e1309](https://github.com/topproio/eslint-config-toppro/commit/30e1309))
+
 ## <small>1.0.4 (2018-12-28)</small>
 
 * feat: extend toppro/vue ([eee7745](https://github.com/topproio/eslint-config-toppro/commit/eee7745))
