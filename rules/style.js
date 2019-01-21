@@ -55,7 +55,7 @@ module.exports = {
             applyDefaultPatterns: true
         }],
         'linebreak-style': [2, 'unix'],
-        'lines-around-comment': [2, {beforeBlockComment: true, beforeLineComment: true, allowClassStart: false}],
+        'lines-around-comment': 0,
         'lines-around-directive': [2, {
             before: 'always',
             after: 'always'
