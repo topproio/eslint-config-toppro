@@ -136,3 +136,10 @@ module.exports = {
 - [X] Wechat miniprogram: toppro/weapp
 - [x] Vue
 - [x] React
+
+## Update changelog
+
+```
+npm install -g conventional-changelog-cli
+npm run changelog
+```

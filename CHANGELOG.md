@@ -1,3 +1,7 @@
+## <small>1.0.6 (2019-01-21)</small>
+
+* refactor: discard space above the comment line ([4f0af88](https://github.com/topproio/eslint-config-toppro/commit/4f0af88))
+
 ## <small>1.0.5 (2018-12-29)</small>
 
 * feat: extend toppro/react ([30e1309](https://github.com/topproio/eslint-config-toppro/commit/30e1309))
