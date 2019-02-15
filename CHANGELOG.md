@@ -1,3 +1,7 @@
+## <small>1.0.7 (2019-02-15)</small>
+
+* chore: change confusing-browser-globals to devDep ([98ed2f3](https://github.com/topproio/eslint-config-toppro/commit/98ed2f3))
+
 ## <small>1.0.6 (2019-01-21)</small>
 
 * refactor: discard space above the comment line ([4f0af88](https://github.com/topproio/eslint-config-toppro/commit/4f0af88))
