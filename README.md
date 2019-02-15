@@ -1,5 +1,6 @@
 # eslint-config-toppro
 
+[![Build Status](https://travis-ci.com/topproio/eslint-config-toppro.svg?branch=master)](https://travis-ci.com/topproio/eslint-config-toppro)
 [![npm](https://img.shields.io/badge/license-MIT-yellowgreen.svg)]()
 [![npm](https://img.shields.io/badge/node-%3E%3D8-blue.svg)]()
 [![npm](https://img.shields.io/badge/npm-v6.4.1-yellow.svg)]()
